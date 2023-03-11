@@ -8,8 +8,8 @@ result_conversion = {0:"tie",1:"won",2:"lost"}
 def determine(user,computer):
     first = option_conversion[user]
     second = option_conversion[computer]
-    relative = ( first-second )%3
-    return result_conversion[relative]
+    difference = ( first - second )%3
+    return result_conversion[difference]
 
 
 while True:
@@ -19,7 +19,7 @@ while True:
         result = determine(user, computer)
         print(user, computer, result)
     except:
-        print("Incompatible choice:",user)
+        print("Incompatible choice (rock/paper/scissors):",user)
 
     play_again = input("Play again (y?):").lower()
     if play_again != "y": break
