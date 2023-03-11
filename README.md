@@ -1,1 +1,1 @@
-# Example-repository
+# rock-paper-scissors
